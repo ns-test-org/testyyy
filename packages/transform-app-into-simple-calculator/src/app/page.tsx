@@ -78,7 +78,7 @@ export default function Calendar() {
               : 'text-gray-700 dark:text-gray-300'
             }
             ${isSelected(day) && !isToday(day)
-              ? 'bg-blue-200 dark:bg-blue-800 text-blue-900 dark:text-blue-100'
+              ? 'bg-orange-200 dark:bg-orange-800 text-orange-900 dark:text-orange-100'
               : ''
             }
           `}
@@ -102,11 +102,11 @@ export default function Calendar() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 p-4 sm:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-100 dark:from-gray-900 dark:to-orange-900 p-4 sm:p-8">
       <div className="max-w-md mx-auto">
         {/* Header */}
-        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 mb-6">
-          <h1 className="text-2xl font-bold text-center text-gray-800 dark:text-white mb-6">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 mb-6 border-t-4 border-orange-400">
+          <h1 className="text-2xl font-bold text-center text-orange-800 dark:text-orange-200 mb-6">
             📅 Simple Calendar
           </h1>
           
@@ -121,7 +121,7 @@ export default function Calendar() {
               </svg>
             </button>
             
-            <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
+            <h2 className="text-xl font-semibold text-orange-800 dark:text-orange-200">
               {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
             </h2>
             
@@ -162,8 +162,8 @@ export default function Calendar() {
           </p>
           
           {selectedDate && (
-            <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <p className="text-sm text-blue-700 dark:text-blue-300">
+            <div className="mt-4 p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+              <p className="text-sm text-orange-700 dark:text-orange-300">
                 ✨ You selected: {selectedDate.toDateString()}
               </p>
             </div>
@@ -178,7 +178,7 @@ export default function Calendar() {
               setCurrentDate(today);
               setSelectedDate(today);
             }}
-            className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors shadow-lg"
+            className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition-colors shadow-lg"
           >
             Go to Today
           </button>
@@ -187,4 +187,11 @@ export default function Calendar() {
     </div>
   );
 }
+
+
+
+
+
+
+
 
