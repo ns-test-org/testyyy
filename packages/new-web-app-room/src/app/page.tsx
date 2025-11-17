@@ -78,7 +78,22 @@ export default function Calculator() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-orange-500 flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Animated Grid Background */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="grid grid-cols-12 gap-2 h-full w-full">
+          {Array.from({ length: 144 }).map((_, i) => (
+            <div
+              key={i}
+              className="bg-orange-300 rounded-sm animate-pulse"
+              style={{
+                animationDelay: `${(i * 0.05) % 2}s`,
+                animationDuration: '1.5s'
+              }}
+            />
+          ))}
+        </div>
+      </div>
       <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Calculator</h1>
         
@@ -207,4 +222,5 @@ export default function Calculator() {
     </div>
   );
 }
+
 
