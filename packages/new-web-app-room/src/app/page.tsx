@@ -85,56 +85,19 @@ export default function Calculator() {
 
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
-      {/* Seamless Infinite Animated Orange Grid Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500">
-        {/* Fast moving small grid - moves exactly one grid cell distance */}
-        <div 
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.3) 2px, transparent 2px),
-              linear-gradient(90deg, rgba(255,255,255,0.3) 2px, transparent 2px)
-            `,
-            backgroundSize: '40px 40px',
-            animation: 'gridMove40 8s linear infinite'
-          }}
-        />
-        {/* Medium speed medium grid - moves exactly one grid cell distance */}
-        <div 
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)
-            `,
-            backgroundSize: '80px 80px',
-            animation: 'gridMove80 15s linear infinite'
-          }}
-        />
-        {/* Slow moving large grid - moves exactly one grid cell distance */}
-        <div 
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)
-            `,
-            backgroundSize: '120px 120px',
-            animation: 'gridMove120 25s linear infinite'
-          }}
-        />
-        {/* Diagonal moving grid overlay - moves exactly one grid cell distance */}
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `
-              linear-gradient(45deg, rgba(255,255,255,0.3) 1px, transparent 1px),
-              linear-gradient(-45deg, rgba(255,255,255,0.3) 1px, transparent 1px)
-            `,
-            backgroundSize: '60px 60px',
-            animation: 'gridMoveDiagonal60 12s linear infinite'
-          }}
-        />
+      {/* True Infinite Animated Orange Grid Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 overflow-hidden">
+        {/* Layer 1: Fast moving fine grid */}
+        <div className="infinite-grid-1" />
+        
+        {/* Layer 2: Medium speed grid */}
+        <div className="infinite-grid-2" />
+        
+        {/* Layer 3: Slow moving large grid */}
+        <div className="infinite-grid-3" />
+        
+        {/* Layer 4: Diagonal crosshatch pattern */}
+        <div className="infinite-grid-4" />
       </div>
       <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Calculator</h1>
@@ -270,6 +233,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 

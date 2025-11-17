@@ -148,17 +148,26 @@ body {
   animation: bounce-horizontal 1.5s ease-in-out infinite;
 }
 
-/* Seamless infinite grid animations */
-@keyframes gridMove40 {
+/* Infinite grid animations - grids extend beyond viewport */
+@keyframes infiniteGridMove1 {
   0% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(40px, 40px);
+    transform: translate(-40px, -40px);
   }
 }
 
-@keyframes gridMove80 {
+@keyframes infiniteGridMove2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(60px, -60px);
+  }
+}
+
+@keyframes infiniteGridMove3 {
   0% {
     transform: translate(0, 0);
   }
@@ -167,23 +176,72 @@ body {
   }
 }
 
-@keyframes gridMove120 {
+@keyframes infiniteGridMove4 {
   0% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(120px, 120px);
+    transform: translate(50px, 50px);
   }
 }
 
-@keyframes gridMoveDiagonal60 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-60px, 60px);
-  }
+/* Grid background classes with extended coverage */
+.infinite-grid-1 {
+  background-image: 
+    linear-gradient(rgba(255, 165, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 165, 0, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -200px -200px;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  animation: infiniteGridMove1 8s linear infinite;
 }
+
+.infinite-grid-2 {
+  background-image: 
+    linear-gradient(rgba(255, 140, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 140, 0, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-position: -300px -300px;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  animation: infiniteGridMove2 12s linear infinite;
+}
+
+.infinite-grid-3 {
+  background-image: 
+    linear-gradient(rgba(255, 165, 0, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 165, 0, 0.06) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: -400px -400px;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  animation: infiniteGridMove3 16s linear infinite;
+}
+
+.infinite-grid-4 {
+  background-image: 
+    linear-gradient(45deg, rgba(255, 140, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(255, 140, 0, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: -250px -250px;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  animation: infiniteGridMove4 20s linear infinite;
+}
+
 
 
 
