@@ -86,7 +86,7 @@ export default function Calculator() {
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
       {/* Animated Orange Grid Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600">
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500">
         {/* Fast moving small grid */}
         <div 
           className="absolute inset-0 opacity-30"
@@ -270,6 +270,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 
