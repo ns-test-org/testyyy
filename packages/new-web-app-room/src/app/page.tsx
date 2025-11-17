@@ -114,19 +114,19 @@ export default function Calculator() {
           {/* Row 1 */}
           <button
             onClick={clearAll}
-            className="col-span-2 bg-red-500 hover:bg-red-600 text-white font-semibold py-4 rounded-lg transition-colors"
+            className="col-span-2 bg-gradient-to-br from-red-400 to-red-600 hover:from-red-500 hover:to-red-700 text-white font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             Clear
           </button>
           <button
             onClick={clearEntry}
-            className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             CE
           </button>
           <button
             onClick={() => inputOperation('÷')}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             ÷
           </button>
@@ -134,25 +134,25 @@ export default function Calculator() {
           {/* Row 2 */}
           <button
             onClick={() => inputNumber('7')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             7
           </button>
           <button
             onClick={() => inputNumber('8')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             8
           </button>
           <button
             onClick={() => inputNumber('9')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             9
           </button>
           <button
             onClick={() => inputOperation('×')}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             ×
           </button>
@@ -160,25 +160,25 @@ export default function Calculator() {
           {/* Row 3 */}
           <button
             onClick={() => inputNumber('4')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             4
           </button>
           <button
             onClick={() => inputNumber('5')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             5
           </button>
           <button
             onClick={() => inputNumber('6')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             6
           </button>
           <button
             onClick={() => inputOperation('-')}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             -
           </button>
@@ -186,25 +186,25 @@ export default function Calculator() {
           {/* Row 4 */}
           <button
             onClick={() => inputNumber('1')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             1
           </button>
           <button
             onClick={() => inputNumber('2')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             2
           </button>
           <button
             onClick={() => inputNumber('3')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             3
           </button>
           <button
             onClick={() => inputOperation('+')}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             +
           </button>
@@ -212,19 +212,19 @@ export default function Calculator() {
           {/* Row 5 */}
           <button
             onClick={() => inputNumber('0')}
-            className="col-span-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="col-span-2 bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             0
           </button>
           <button
             onClick={inputDecimal}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-purple-100 to-purple-200 hover:from-purple-200 hover:to-purple-300 text-purple-800 font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             .
           </button>
           <button
             onClick={performCalculation}
-            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-4 rounded-lg transition-colors"
+            className="bg-gradient-to-br from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 text-white font-semibold py-4 rounded-lg transition-all shadow-lg"
           >
             =
           </button>
@@ -233,6 +233,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 
