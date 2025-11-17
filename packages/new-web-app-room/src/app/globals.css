@@ -148,36 +148,42 @@ body {
   animation: bounce-horizontal 1.5s ease-in-out infinite;
 }
 
-/* Enhanced animated grid background */
-@keyframes gridMove {
+/* Seamless infinite grid animations */
+@keyframes gridMove40 {
   0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  25% {
-    transform: translate(25px, 25px) rotate(1deg);
-  }
-  50% {
-    transform: translate(50px, 50px) rotate(0deg);
-  }
-  75% {
-    transform: translate(25px, 75px) rotate(-1deg);
+    transform: translate(0, 0);
   }
   100% {
-    transform: translate(0, 100px) rotate(0deg);
+    transform: translate(40px, 40px);
   }
 }
 
-/* Additional diagonal grid animation */
-@keyframes gridMoveDiagonal {
+@keyframes gridMove80 {
   0% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(-30px, 30px) scale(1.05);
+    transform: translate(0, 0);
   }
   100% {
-    transform: translate(0, 60px) scale(1);
+    transform: translate(-80px, 80px);
   }
 }
+
+@keyframes gridMove120 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(120px, 120px);
+  }
+}
+
+@keyframes gridMoveDiagonal60 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-60px, 60px);
+  }
+}
+
 
 

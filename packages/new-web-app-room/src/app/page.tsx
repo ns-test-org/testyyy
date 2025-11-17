@@ -85,9 +85,9 @@ export default function Calculator() {
 
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
-      {/* Animated Orange Grid Background */}
+      {/* Seamless Infinite Animated Orange Grid Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500">
-        {/* Fast moving small grid */}
+        {/* Fast moving small grid - moves exactly one grid cell distance */}
         <div 
           className="absolute inset-0 opacity-30"
           style={{
@@ -96,10 +96,10 @@ export default function Calculator() {
               linear-gradient(90deg, rgba(255,255,255,0.3) 2px, transparent 2px)
             `,
             backgroundSize: '40px 40px',
-            animation: 'gridMove 8s linear infinite'
+            animation: 'gridMove40 8s linear infinite'
           }}
         />
-        {/* Medium speed medium grid */}
+        {/* Medium speed medium grid - moves exactly one grid cell distance */}
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -108,10 +108,10 @@ export default function Calculator() {
               linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)
             `,
             backgroundSize: '80px 80px',
-            animation: 'gridMove 15s linear infinite reverse'
+            animation: 'gridMove80 15s linear infinite'
           }}
         />
-        {/* Slow moving large grid */}
+        {/* Slow moving large grid - moves exactly one grid cell distance */}
         <div 
           className="absolute inset-0 opacity-15"
           style={{
@@ -120,10 +120,10 @@ export default function Calculator() {
               linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)
             `,
             backgroundSize: '120px 120px',
-            animation: 'gridMove 25s linear infinite'
+            animation: 'gridMove120 25s linear infinite'
           }}
         />
-        {/* Diagonal moving grid overlay */}
+        {/* Diagonal moving grid overlay - moves exactly one grid cell distance */}
         <div 
           className="absolute inset-0 opacity-10"
           style={{
@@ -132,7 +132,7 @@ export default function Calculator() {
               linear-gradient(-45deg, rgba(255,255,255,0.3) 1px, transparent 1px)
             `,
             backgroundSize: '60px 60px',
-            animation: 'gridMoveDiagonal 12s ease-in-out infinite'
+            animation: 'gridMoveDiagonal60 12s linear infinite'
           }}
         />
       </div>
@@ -270,6 +270,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 
