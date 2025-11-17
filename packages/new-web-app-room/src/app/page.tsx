@@ -86,27 +86,53 @@ export default function Calculator() {
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
       {/* Animated Orange Grid Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600">
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600">
+        {/* Fast moving small grid */}
         <div 
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-30"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+              linear-gradient(rgba(255,255,255,0.3) 2px, transparent 2px),
+              linear-gradient(90deg, rgba(255,255,255,0.3) 2px, transparent 2px)
             `,
-            backgroundSize: '50px 50px',
-            animation: 'gridMove 20s linear infinite'
+            backgroundSize: '40px 40px',
+            animation: 'gridMove 8s linear infinite'
           }}
         />
+        {/* Medium speed medium grid */}
         <div 
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: `
               linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
               linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)
             `,
-            backgroundSize: '100px 100px',
-            animation: 'gridMove 30s linear infinite reverse'
+            backgroundSize: '80px 80px',
+            animation: 'gridMove 15s linear infinite reverse'
+          }}
+        />
+        {/* Slow moving large grid */}
+        <div 
+          className="absolute inset-0 opacity-15"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)
+            `,
+            backgroundSize: '120px 120px',
+            animation: 'gridMove 25s linear infinite'
+          }}
+        />
+        {/* Diagonal moving grid overlay */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `
+              linear-gradient(45deg, rgba(255,255,255,0.3) 1px, transparent 1px),
+              linear-gradient(-45deg, rgba(255,255,255,0.3) 1px, transparent 1px)
+            `,
+            backgroundSize: '60px 60px',
+            animation: 'gridMoveDiagonal 12s ease-in-out infinite'
           }}
         />
       </div>
@@ -244,6 +270,8 @@ export default function Calculator() {
     </div>
   );
 }
+
+
 
 
 
