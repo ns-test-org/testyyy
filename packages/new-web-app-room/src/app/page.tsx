@@ -84,8 +84,33 @@ export default function Calculator() {
   };
 
   return (
-    <div className="min-h-screen bg-orange-400 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm">
+    <div className="min-h-screen relative overflow-hidden flex items-center justify-center p-4">
+      {/* Animated Orange Grid Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600">
+        <div 
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px',
+            animation: 'gridMove 20s linear infinite'
+          }}
+        />
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)
+            `,
+            backgroundSize: '100px 100px',
+            animation: 'gridMove 30s linear infinite reverse'
+          }}
+        />
+      </div>
+      <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Calculator</h1>
         
         {/* Display */}
@@ -219,5 +244,7 @@ export default function Calculator() {
     </div>
   );
 }
+
+
 
 
