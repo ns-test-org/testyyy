@@ -99,7 +99,7 @@ export default function Calculator() {
         {/* Layer 4: Diagonal crosshatch pattern */}
         <div className="infinite-grid-4" />
       </div>
-      <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm">
+      <div className="relative z-10 bg-gradient-to-br from-purple-300 via-purple-400 to-purple-500 rounded-2xl shadow-2xl p-6 w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Calculator</h1>
         
         {/* Display */}
@@ -233,6 +233,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 
